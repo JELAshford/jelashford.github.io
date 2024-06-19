@@ -1,28 +1,28 @@
 :root {
     /* Google font  */
-    font-family: 'Noto Sans';
+    font-family: 'Alef';
 
     /* Colours: @AlexCristache MindfulPalettes Num. 83 */
-    --silver_bird: #fbf5f0;
-    --holy_cannoli: #db783e;
-    --rum_punch: #AA423A;
-    --tropical_forest: #024a43;
-    --guerilla_forest: #142d25;
+    --silver_bird: 251, 245, 240;
+    --holy_cannoli: 219, 120, 62;
+    --rum_punch: 170, 66, 58;
+    --tropical_forest: 2, 74, 67;
+    --guerilla_forest: 20, 45, 37;    
 }
 
 .emphasis {
-    color: var(--rum_punch)
+    color: rgb(var(--rum_punch))
 }
 
 /* Body */
 body {
-    background-color: var(--silver_bird);
+    background-color: rgb(var(--silver_bird));
 }
 
 
 /* Hyperlinks */
 a {
-    color: var(--holy_cannoli);
+    color: rgb(var(--holy_cannoli));
     text-decoration: none;
 }
 #title a {
@@ -42,11 +42,11 @@ h1::before {
     height: 7px;
     transform: skew(-20deg) translateX(-50%);
     z-index: -1;
-    background: linear-gradient(to right, var(--silver_bird) 0%, var(--tropical_forest) 20%, var(--silver_bird) 100%);
+    background: linear-gradient(to right, rgb(var(--silver_bird)) 0%, rgb(var(--tropical_forest)) 20%, rgb(var(--silver_bird)) 100%);
 }
 
 h2 {
-    color: var(--guerilla_forest);
+    color: rgb(var(--guerilla_forest));
     position: relative;
 }
 h2::before {
@@ -58,11 +58,11 @@ h2::before {
     height: 7px;
     transform: skew(-20deg) translateX(-50%);
     z-index: -1;
-    background: linear-gradient(to right, var(--silver_bird) 0%, var(--rum_punch) 20%, var(--silver_bird) 100%);
+    background: linear-gradient(to right, rgb(var(--silver_bird)) 0%, rgb(var(--rum_punch), 0.5) 20%, rgb(var(--silver_bird)) 100%);
 }
 #contact h2::before {
     left: 20%;
-    background: linear-gradient(to right, var(--silver_bird) 0%, var(--tropical_forest) 20%, var(--silver_bird) 100%);
+    background: linear-gradient(to right, rgb(var(--silver_bird)) 0%, rgb(var(--tropical_forest)) 20%, rgb(var(--silver_bird)) 100%);
 }
 
 /* Profile and image */
